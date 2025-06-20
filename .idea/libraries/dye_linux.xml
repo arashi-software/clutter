@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="dye-linux">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/dye-linux.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
