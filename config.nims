@@ -1,1 +1,4 @@
---define:release
+--define:
+  release
+--deepcopy:
+  on
