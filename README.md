@@ -1,10 +1,12 @@
 # Clutter
 Clutter is a command-line image processing tool written in Nim that applies cinematic color grading using customizable color palettes to create and apply smooth LookUp Tables (LUTs).
 ## Examples
+| **Original**    | ![clutter](https://github.com/user-attachments/assets/7e2b86cb-a531-4031-984c-3367b8982b74)            |
+| --------------- | ------------------------------------------------------------------------------------------------------ |
+| **Nord**        | ![nord-clutter](https://github.com/user-attachments/assets/e0223b0d-783d-4dbd-9dcf-42be1e35d27a)       |
+| **Catppuccin**  | ![catppuccin-clutter](https://github.com/user-attachments/assets/4a80774a-f863-47a4-8342-70abda49fd08) |
+| **Tokyo Night** | ![tokyo-clutter](https://github.com/user-attachments/assets/f8c8c7fb-d492-4e6f-a08f-1b8439c928ac)      |
 
-| Original         | Nord | Catppuccin                  | Tokyonight             |
-| ---------------- | ---- | --------------------------- | ---------------------- |
-|![clutter](https://github.com/user-attachments/assets/7e2b86cb-a531-4031-984c-3367b8982b74)|![nord-clutter](https://github.com/user-attachments/assets/e0223b0d-783d-4dbd-9dcf-42be1e35d27a)|![catppuccin-clutter](https://github.com/user-attachments/assets/4a80774a-f863-47a4-8342-70abda49fd08)|![tokyo-clutter](https://github.com/user-attachments/assets/f8c8c7fb-d492-4e6f-a08f-1b8439c928ac)|
 
 ## Installation
 ### Dependencies
