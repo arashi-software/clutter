@@ -39,9 +39,9 @@ let args* = (
   ),
   input: newPathArg(@["--input", "-i"], help = "The file to convert", defaultVal = ""),
   strength:
-    newFloatArg(@["--strength", "-s"], help = "The LUT strength", defaultVal = 0.25),
+    newFloatArg(@["--strength", "-s"], help = "The LUT strength", defaultVal = 0.375),
   interp: newIntArg(
-    @["--interpolate", "-I"], help = "How many colors to generate", defaultVal = 128
+    @["--interpolate", "-I"], help = "How many colors to generate", defaultVal = 32
   ),
   palette: newStringArg(
     @["<palette>"], help = "The palette to use", multi = true, optional = true
