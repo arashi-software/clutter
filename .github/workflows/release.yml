@@ -32,6 +32,8 @@ jobs:
           version: binary:stable
       - name: Build
         run: |
+          sudo apt-get update && sudo apt-get -y upgrade
+          sudo apt install -y libvips libvips-tools
           nimble install -d -y
           nimble build 
       - uses: thedoctor0/zip-release@main
