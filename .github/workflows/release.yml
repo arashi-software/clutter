@@ -1,4 +1,4 @@
-name: Build
+name: Binaries
 
 on:
   workflow_dispatch: 
@@ -13,7 +13,6 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          #- windows-latest
     permissions:
       contents: write
       checks: write
@@ -34,23 +33,23 @@ jobs:
       - name: Build
         run: |
           nimble install -d -y
-          nimble build -d:release --deepcopy:on
+          nimble build 
       - uses: thedoctor0/zip-release@main
         if: ${{ matrix.os == 'ubuntu-latest' }}
         with:
           type: 'zip'
-          filename: dye-linux.zip
-          path: dye
+          filename: clutter-linux.zip
+          path: clutter
       - uses: thedoctor0/zip-release@main
         if: ${{ matrix.os == 'windows-latest' }}
         with:
           type: 'zip'
-          filename: dye-windows.zip
-          path: dye.exe
+          filename: clutter-windows.zip
+          path: clutter.exe
 
       - name: Release
         uses: alexellis/upload-assets@0.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
-          asset_paths: '["dye-*.zip"]'
+          asset_paths: '["clutter-*.zip"]'
