@@ -60,3 +60,8 @@ To see the full range of options and commands
 ```sh
 clutter -h
 ```
+## Todo
+- [ ] Binaries
+- [ ] Better packaging
+- [ ] More palettes
+- [ ] Optimizations
