@@ -19,8 +19,9 @@ Clutter is a command-line image processing tool written in Nim that applies cine
 ### Building
 Clutter can be built and installed from Nim's package manager, nimble.
 ```sh
-nimble install gh:arashi-software/clutter
+nimble install "gh:arashi-software/clutter@#HEAD"
 ```
+
 or you can build from source
 ```sh
 git clone https://github.com/arashi-software/clutter
