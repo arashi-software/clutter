@@ -34,10 +34,9 @@ let palettescmd = (
 
 let args* = (
   palettes: newCommandArg(@["palettes", "p"], palettescmd, help = "Palete Management"),
-  output: newStringArg(
-    @["--output", "-o"], help = "The file to write to", optional = true, defaultVal = ""
-  ),
-  input: newPathArg(@["--input", "-i"], help = "The file to convert", defaultVal = ""),
+  output:
+    newStringArg(@["--output", "-o"], help = "The file to write to", optional = true),
+  input: newPathArg(@["--input", "-i"], help = "The file to convert"),
   strength:
     newFloatArg(@["--strength", "-s"], help = "The LUT strength", defaultVal = 0.375),
   interp: newIntArg(

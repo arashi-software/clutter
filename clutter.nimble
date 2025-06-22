@@ -16,4 +16,4 @@ if detectOs(Ubuntu) or detectOs(Debian):
   foreignDep "libvips"
   foreignDep "libvips-tools"
 else:
- foreignDep "libvips"
+  foreignDep "libvips"
